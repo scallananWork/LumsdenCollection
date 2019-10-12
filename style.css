@@ -1,0 +1,21 @@
+body{
+	text-decoration:none;
+	list-style-type:none;
+	
+}
+ul{
+	float:left;
+	margin:0px;
+	padding:0;
+	list-style: none;
+	background-color:grey;
+	text-decoration:none;
+	
+}
+li{
+	display:inline;
+	margin: 60px;
+	text-decoration:none;
+	list-style-type:none;
+	background-color:grey;
+}
