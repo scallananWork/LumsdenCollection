@@ -1,17 +1,43 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Discover the Lumsden Collection, featuring the work of an Irish artist.">
 		<link rel="stylesheet" href="style.css">
-		<title>Lumsden's Collection</title>
+		<title>The Lumsden Collection | Irish Art</title>
 	</head>
-	
-	<body>
-	
-		<ul>
-			<li><a href="index.html">Home</li>
-			<li><a href="Gallery.html">Gallery</li>
-			<li><a href="Exhibition.html">Exhibition</li>
-			<li><a href="contact.html">Contact</li>
-		</ul>
+	<body class="home-page">
+		<header class="site-header">
+			<a class="wordmark" href="index.html" aria-label="The Lumsden Collection home">
+				<span>The</span> Lumsden Collection
+			</a>
+			<nav aria-label="Main navigation">
+				<a class="active" href="index.html" aria-current="page">Home</a>
+				<a href="Gallery.html">Gallery</a>
+				<a href="Exhibition.html">Exhibition</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</header>
+
+		<main>
+			<section class="intro" aria-labelledby="page-title">
+				<p class="eyebrow">A collection of Irish art</p>
+				<h1 id="page-title">The Lumsden<br>Collection</h1>
+				<p class="intro-copy">A closer look at the work of an Irish artist.</p>
+			</section>
+
+			<figure class="featured-work">
+				<img src="images/gallery/010fef3a-8328-4b1d-b85f-cf4e69b0a80b.jpg" alt="Charcoal figure drawing from the Lumsden Collection">
+				<figcaption>
+					<span>From the collection</span>
+					<a href="Gallery.html">Explore the gallery <span aria-hidden="true">&rarr;</span></a>
+				</figcaption>
+			</figure>
+		</main>
+		<footer class="site-footer">
+			<span>The Lumsden Collection</span>
+			<span>Irish art, thoughtfully collected.</span>
+		</footer>
 	</body>
 </html>
