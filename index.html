@@ -1,43 +1,98 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Discover the Lumsden Collection, featuring the work of an Irish artist.">
-		<link rel="stylesheet" href="style.css">
-		<title>The Lumsden Collection | Irish Art</title>
-	</head>
-	<body class="home-page">
-		<header class="site-header">
-			<a class="wordmark" href="index.html" aria-label="The Lumsden Collection home">
-				<span>The</span> Lumsden Collection
-			</a>
-			<nav aria-label="Main navigation">
-				<a class="active" href="index.html" aria-current="page">Home</a>
-				<a href="Gallery.html">Gallery</a>
-				<a href="Exhibition.html">Exhibition</a>
-				<a href="contact.html">Contact</a>
-			</nav>
-		</header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the work of an Irish artist across fine art, portraiture, abstract studies and commercial illustration. The Lumsden Collection.">
+  <meta name="theme-color" content="#f4f1eb">
+  <link rel="stylesheet" href="style.css">
+  <title>The Lumsden Collection | Irish Artist Portfolio</title>
+</head>
+<body class="home-page">
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="The Lumsden Collection home"><span>The</span> Lumsden Collection</a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">Menu</button>
+    <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="Gallery.html">Gallery</a><a href="Japanese.html">Japanese &amp; Manga</a><a href="Dark.html">Dark Grounds</a></nav>
+  </header>
 
-		<main>
-			<section class="intro" aria-labelledby="page-title">
-				<p class="eyebrow">A collection of Irish art</p>
-				<h1 id="page-title">The Lumsden<br>Collection</h1>
-				<p class="intro-copy">A closer look at the work of an Irish artist.</p>
-			</section>
+  <main>
+    <section class="home-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">An Irish artist's portfolio</p>
+        <h1>Art in many<br><em>forms.</em></h1>
+        <p class="hero-intro">A collection spanning expressive portraiture, darker imagery, experimental studies and illustrated work.</p>
+        <a class="text-link" href="Gallery.html">Explore the collection <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-artwork" aria-label="Selected works from the collection">
+        <a class="hero-image hero-image-main" href="Gallery.html?category=dark-ground" aria-label="Explore dark surreal artwork">
+          <img src="images/new-works/14-dark-surreal-study.jpg" alt="Dark surreal animal painting with moon and skull motifs">
+        </a>
+        <a class="hero-image hero-image-small hero-image-top" href="Gallery.html?category=abstract" aria-label="Explore abstract artwork">
+          <img src="images/new-works/10-abstract-study-one.jpg" alt="Red and yellow abstract mixed-media painting">
+        </a>
+        <a class="hero-image hero-image-small hero-image-bottom" href="Gallery.html?category=fine-art" aria-label="Explore fine art and portraiture">
+          <img src="images/new-works/13-portrait-study.jpg" alt="Expressive monochrome portrait painting">
+        </a>
+        <span class="hero-index">SELECTED WORKS&nbsp; / &nbsp;2026</span>
+      </div>
+    </section>
 
-			<figure class="featured-work">
-				<img src="images/gallery/010fef3a-8328-4b1d-b85f-cf4e69b0a80b.jpg" alt="Charcoal figure drawing from the Lumsden Collection">
-				<figcaption>
-					<span>From the collection</span>
-					<a href="Gallery.html">Explore the gallery <span aria-hidden="true">&rarr;</span></a>
-				</figcaption>
-			</figure>
-		</main>
-		<footer class="site-footer">
-			<span>The Lumsden Collection</span>
-			<span>Irish art, thoughtfully collected.</span>
-		</footer>
-	</body>
+    <section class="intro-band" aria-label="Collection introduction">
+      <p class="eyebrow">The collection</p>
+      <p class="intro-statement">From intimate studies to bold visual storytelling, the work moves between materials, subjects and moods.</p>
+    </section>
+
+    <section class="category-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">Explore by discipline</p><h2>Four sides of the practice</h2></div>
+        <a class="text-link" href="Gallery.html">View all works <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="category-cards">
+        <a class="category-card category-card-dark" href="Gallery.html?category=fine-art">
+          <img src="images/new-works/13-portrait-study.jpg" alt="Monochrome portrait painting">
+          <span class="category-number">01</span><span class="category-name">Fine Art <em>& Portraiture</em></span><span class="category-arrow">↗</span>
+        </a>
+        <a class="category-card" href="Gallery.html?category=dark-ground">
+          <img src="images/new-works/14-dark-surreal-study.jpg" alt="Surreal animal painting with celestial motifs">
+          <span class="category-number">02</span><span class="category-name">Dark <em>& Surreal</em></span><span class="category-arrow">↗</span>
+        </a>
+        <a class="category-card" href="Gallery.html?category=abstract">
+          <img src="images/new-works/11-abstract-study-two.jpg" alt="Red and yellow abstract experimental painting">
+          <span class="category-number">03</span><span class="category-name">Abstract <em>& Experimental</em></span><span class="category-arrow">↗</span>
+        </a>
+        <a class="category-card category-card-dark" href="Gallery.html?category=dark-ground">
+          <img src="images/new-works/09-ramen-bar-illustration.jpg" alt="Colourful Ramen Bar illustration">
+          <span class="category-number">04</span><span class="category-name">Commercial <em>& Illustration</em></span><span class="category-arrow">↗</span>
+        </a>
+        <a class="category-card" href="Japanese.html">
+          <img src="images/japanese-manga/lumsden_03_framed_sketch.jpg" alt="Framed monochrome manga-style drawing">
+          <span class="category-number">05</span><span class="category-name">Japanese <em>&amp; Manga</em></span><span class="category-arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="about-strip" id="about">
+      <div><p class="eyebrow">About the collection</p><h2>A practice that<br><em>doesn't sit still.</em></h2></div>
+      <div class="about-copy"><p>The Lumsden Collection brings together an evolving body of work by an Irish artist. Moving between fine art, drawing, painting and visual illustration, the collection reflects a curiosity for subject, texture and atmosphere.</p><p>Further information about the artist, materials and individual works can be added as details become available.</p><a class="text-link" href="Gallery.html">Discover the work <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="contact-strip" id="contact">
+      <p class="eyebrow">Enquiries & opportunities</p>
+      <h2>Interested in the work?</h2>
+      <p>For exhibition, commission or portfolio enquiries, please get in touch with the artist.</p>
+      <span class="contact-note">Contact details to be added</span>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="footer-wordmark" href="index.html">The Lumsden Collection</a><span>Irish art, across disciplines.</span><a href="Gallery.html">Explore the gallery ↗</a></footer>
+
+  <dialog class="artwork-viewer" id="artworkViewer" aria-label="Artwork viewer">
+    <div class="viewer-top"><span class="viewer-brand">The Lumsden Collection</span><span class="viewer-counter" id="viewerCounter"></span><button class="viewer-close" id="viewerClose" aria-label="Close artwork viewer">×</button></div>
+    <button class="viewer-arrow viewer-previous" id="viewerPrevious" aria-label="Previous artwork">‹</button>
+    <div class="viewer-stage"><img id="viewerImage" src="" alt=""></div>
+    <button class="viewer-arrow viewer-next" id="viewerNext" aria-label="Next artwork">›</button>
+    <div class="viewer-bottom"><span id="viewerCaption">From the collection</span><button id="viewerZoom" class="viewer-zoom">Zoom in +</button></div>
+  </dialog>
+  <script src="gallery.js"></script>
+</body>
 </html>
