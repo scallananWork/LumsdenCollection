@@ -1,97 +1,64 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Explore works from the Lumsden Collection of Irish art.">
-		<link rel="stylesheet" href="style.css">
-		<title>Gallery | The Lumsden Collection</title>
-	</head>
-	<body>
-		<header class="site-header">
-			<a class="wordmark" href="index.html" aria-label="The Lumsden Collection home">
-				<span>The</span> Lumsden Collection
-			</a>
-			<nav aria-label="Main navigation">
-				<a href="index.html">Home</a>
-				<a class="active" href="Gallery.html" aria-current="page">Gallery</a>
-				<a href="Exhibition.html">Exhibition</a>
-				<a href="contact.html">Contact</a>
-			</nav>
-		</header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse the Lumsden Collection: fine art, portraiture, dark surrealism, abstract studies and commercial illustration by an Irish artist.">
+  <meta name="theme-color" content="#f4f1eb">
+  <link rel="stylesheet" href="style.css">
+  <title>Gallery | The Lumsden Collection</title>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="The Lumsden Collection home"><span>The</span> Lumsden Collection</a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">Menu</button>
+    <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="Gallery.html">Gallery</a><a href="Japanese.html">Japanese &amp; Manga</a><a href="Dark.html">Dark Grounds</a></nav>
+  </header>
+  <main>
+    <section class="gallery-intro">
+      <p class="eyebrow">A closer look</p><h1>The Gallery</h1>
+      <p class="intro-copy">A selection across fine art, illustration, drawing and darker works.</p>
+    </section>
+    <section class="gallery-controls" aria-label="Filter artwork by category">
+      <div class="filter-list" role="group" aria-label="Artwork categories">
+        <button class="filter-button is-active" data-filter="all" aria-pressed="true">All works <span>18</span></button>
+        <button class="filter-button" data-filter="fine-art" aria-pressed="false">Fine Art &amp; Portraiture</button>
+        <button class="filter-button" data-filter="dark-ground" aria-pressed="false">Dark Grounds</button>
+        <button class="filter-button" data-filter="abstract" aria-pressed="false">Abstract &amp; Experimental</button>
+        <button class="filter-button" data-filter="studies" aria-pressed="false">Sketches &amp; Studies</button>
+        <button class="filter-button" data-filter="japanese-manga" aria-pressed="false">Japanese &amp; Manga</button>
+      </div><p class="gallery-count" id="galleryCount">18 works</p>
+    </section>
+    <section class="collection-grid" id="collectionGrid" aria-label="Works from the collection">
+<figure class="collection-work" data-category="fine-art" data-title="Figure Study" data-caption="Fine art"><button class="artwork-trigger" aria-label="View Figure Study"><img src="images/new-works/01-figure-study.jpg" alt="Expressive figure painting" loading="lazy"></button><figcaption><span>01</span><span>Figure Study</span></figcaption></figure>
+<figure class="collection-work" data-category="dark-ground" data-title="Oyster Menu" data-caption="Chalkboard illustration"><button class="artwork-trigger" aria-label="View Oyster Menu"><img src="images/new-works/02-oyster-menu.jpg" alt="Seafood menu artwork on a dark chalkboard ground" loading="lazy"></button><figcaption><span>02</span><span>Oyster Menu</span></figcaption></figure>
+<figure class="collection-work" data-category="dark-ground" data-title="Seafood Cafe Board" data-caption="Chalkboard illustration"><button class="artwork-trigger" aria-label="View Seafood Cafe Board"><img src="images/new-works/03-seafood-cafe-board.jpg" alt="Seafood Cafe chalkboard artwork" loading="lazy"></button><figcaption><span>03</span><span>Seafood Cafe Board</span></figcaption></figure>
+<figure class="collection-work" data-category="dark-ground" data-title="Seafood Map Mural" data-caption="Chalkboard mural"><button class="artwork-trigger" aria-label="View Seafood Map Mural"><img src="images/new-works/04-seafood-map-mural.jpg" alt="Illustrated seafood mural on a dark ground" loading="lazy"></button><figcaption><span>04</span><span>Seafood Map Mural</span></figcaption></figure>
+<figure class="collection-work" data-category="dark-ground" data-title="Octopus Mural Detail" data-caption="Chalkboard illustration"><button class="artwork-trigger" aria-label="View Octopus Mural Detail"><img src="images/new-works/05-octopus-mural-detail.jpg" alt="Octopus chalk illustration on a dark ground" loading="lazy"></button><figcaption><span>05</span><span>Octopus Mural Detail</span></figcaption></figure>
+<figure class="collection-work" data-category="studies" data-title="Boat Study I" data-caption="Graphite study"><button class="artwork-trigger" aria-label="View Boat Study I"><img src="images/new-works/06-boat-study-one.jpg" alt="Monochrome boat drawing on a light ground" loading="lazy"></button><figcaption><span>06</span><span>Boat Study I</span></figcaption></figure>
+<figure class="collection-work" data-category="studies" data-title="Boat Study II" data-caption="Graphite study"><button class="artwork-trigger" aria-label="View Boat Study II"><img src="images/new-works/07-boat-study-two.jpg" alt="Monochrome boat drawing on a light ground" loading="lazy"></button><figcaption><span>07</span><span>Boat Study II</span></figcaption></figure>
+<figure class="collection-work" data-category="studies" data-title="Boat Study III" data-caption="Graphite study"><button class="artwork-trigger" aria-label="View Boat Study III"><img src="images/new-works/08-boat-study-three.jpg" alt="Monochrome boat drawing on a light ground" loading="lazy"></button><figcaption><span>08</span><span>Boat Study III</span></figcaption></figure>
+<figure class="collection-work" data-category="dark-ground" data-title="Ramen Bar" data-caption="Illustration"><button class="artwork-trigger" aria-label="View Ramen Bar"><img src="images/new-works/09-ramen-bar-illustration.jpg" alt="Colourful Ramen Bar artwork on a dark ground" loading="lazy"></button><figcaption><span>09</span><span>Ramen Bar</span></figcaption></figure>
+<figure class="collection-work" data-category="abstract" data-title="Abstract Study I" data-caption="Mixed media"><button class="artwork-trigger" aria-label="View Abstract Study I"><img src="images/new-works/10-abstract-study-one.jpg" alt="Red and yellow abstract mixed-media work" loading="lazy"></button><figcaption><span>10</span><span>Abstract Study I</span></figcaption></figure>
+<figure class="collection-work" data-category="abstract" data-title="Abstract Study II" data-caption="Mixed media"><button class="artwork-trigger" aria-label="View Abstract Study II"><img src="images/new-works/11-abstract-study-two.jpg" alt="Red and yellow abstract experimental work" loading="lazy"></button><figcaption><span>11</span><span>Abstract Study II</span></figcaption></figure>
+<figure class="collection-work" data-category="studies" data-title="Line Study" data-caption="Drawing"><button class="artwork-trigger" aria-label="View Line Study"><img src="images/new-works/12-line-study.jpg" alt="Experimental geometric line drawing" loading="lazy"></button><figcaption><span>12</span><span>Line Study</span></figcaption></figure>
+<figure class="collection-work" data-category="fine-art" data-title="Portrait Study" data-caption="Portraiture"><button class="artwork-trigger" aria-label="View Portrait Study"><img src="images/new-works/13-portrait-study.jpg" alt="Monochrome portrait painting on a light ground" loading="lazy"></button><figcaption><span>13</span><span>Portrait Study</span></figcaption></figure>
+<figure class="collection-work" data-category="dark-ground" data-title="Dark Surreal Study" data-caption="Surrealism"><button class="artwork-trigger" aria-label="View Dark Surreal Study"><img src="images/new-works/14-dark-surreal-study.jpg" alt="Surreal animal and celestial imagery on a black ground" loading="lazy"></button><figcaption><span>14</span><span>Dark Surreal Study</span></figcaption></figure>
+<figure class="collection-work" data-category="japanese-manga" data-title="Manga Study I" data-caption="Japanese & Manga"><button class="artwork-trigger" aria-label="View Manga Study I"><img src="images/japanese-manga/lumsden_01_top_sketch.jpg" alt="Monochrome manga-inspired drawing" loading="lazy"></button><figcaption><span>15</span><span>Manga Study I</span></figcaption></figure>
+<figure class="collection-work" data-category="japanese-manga" data-title="Manga Study II" data-caption="Japanese & Manga"><button class="artwork-trigger" aria-label="View Manga Study II"><img src="images/japanese-manga/lumsden_02_left_sketch.jpg" alt="Monochrome manga-inspired character drawing" loading="lazy"></button><figcaption><span>16</span><span>Manga Study II</span></figcaption></figure>
+<figure class="collection-work" data-category="japanese-manga" data-title="Manga Study III" data-caption="Japanese & Manga"><button class="artwork-trigger" aria-label="View Manga Study III"><img src="images/japanese-manga/lumsden_03_framed_sketch.jpg" alt="Manga-inspired drawing in its original wooden frame" loading="lazy"></button><figcaption><span>17</span><span>Manga Study III</span></figcaption></figure>
+<figure class="collection-work" data-category="japanese-manga" data-title="Manga Study IV" data-caption="Japanese & Manga"><button class="artwork-trigger" aria-label="View Manga Study IV"><img src="images/japanese-manga/lumsden_04_bottom_sketch.jpg" alt="Monochrome manga-inspired drawing" loading="lazy"></button><figcaption><span>18</span><span>Manga Study IV</span></figcaption></figure>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="footer-wordmark" href="index.html">The Lumsden Collection</a><span>Irish art, across disciplines.</span><a href="index.html">Back home ↗</a></footer>
 
-		<main>
-			<section class="intro" aria-labelledby="page-title">
-				<p class="eyebrow">A closer look</p>
-				<h1 id="page-title">The Gallery</h1>
-				<p class="intro-copy">A selection of works from the Lumsden Collection.</p>
-			</section>
-
-			<section class="collection-grid" aria-label="Works from the collection">
-				<figure class="collection-work">
-					<img src="images/gallery/010fef3a-8328-4b1d-b85f-cf4e69b0a80b.jpg" alt="Artwork from the Lumsden Collection, work 01">
-					<figcaption>01 <span>From the collection</span></figcaption>
-				</figure>
-				<figure class="collection-work">
-					<img src="images/gallery/0927db77-cfef-491f-b821-99b87941a251.jpg" alt="Artwork from the Lumsden Collection, work 02">
-					<figcaption>02 <span>From the collection</span></figcaption>
-				</figure>
-				<figure class="collection-work">
-					<img src="images/gallery/1c63a463-eb60-4501-80ba-52fd3be8122b.jpg" alt="Artwork from the Lumsden Collection, work 03">
-					<figcaption>03 <span>From the collection</span></figcaption>
-				</figure>
-				<figure class="collection-work">
-					<img src="images/gallery/322588ac-0696-4a24-b5bc-671240888a46.jpg" alt="Artwork from the Lumsden Collection, work 04">
-					<figcaption>04 <span>From the collection</span></figcaption>
-				</figure>
-				<figure class="collection-work">
-					<img src="images/gallery/3c04f2c0-d0c1-44f0-813f-af33f059e81e.jpg" alt="Artwork from the Lumsden Collection, work 05">
-					<figcaption>05 <span>From the collection</span></figcaption>
-				</figure>
-				<figure class="collection-work">
-					<img src="images/gallery/63e07e9a-6815-47cc-ad75-a3939278d9b5.jpg" alt="Artwork from the Lumsden Collection, work 06">
-					<figcaption>06 <span>From the collection</span></figcaption>
-				</figure>
-				<figure class="collection-work">
-					<img src="images/gallery/69052f1f-5cb9-4414-824d-890ee948fd59.jpg" alt="Artwork from the Lumsden Collection, work 07">
-					<figcaption>07 <span>From the collection</span></figcaption>
-				</figure>
-				<figure class="collection-work">
-					<div class="rotated-artwork">
-						<img src="images/gallery/786dfaa0-70f6-4e12-b693-646e56d9c7a1.jpg" alt="Artwork from the Lumsden Collection, work 08">
-					</div>
-					<figcaption>08 <span>From the collection</span></figcaption>
-				</figure>
-				<figure class="collection-work">
-					<div class="rotated-artwork rotated-artwork--wide">
-						<img src="images/gallery/91f3bc0e-a00f-4b8b-a272-ac26f1c90d3b.jpg" alt="Artwork from the Lumsden Collection, work 09">
-					</div>
-					<figcaption>09 <span>From the collection</span></figcaption>
-				</figure>
-				<figure class="collection-work">
-					<img src="images/gallery/a0a21cdf-6f0c-4454-a4d0-bab51f1dbd51.jpg" alt="Artwork from the Lumsden Collection, work 10">
-					<figcaption>10 <span>From the collection</span></figcaption>
-				</figure>
-				<figure class="collection-work">
-					<div class="rotated-artwork">
-						<img src="images/gallery/bb032ffb-30a1-4b23-b033-7c21b633132c.jpg" alt="Artwork from the Lumsden Collection, work 11">
-					</div>
-					<figcaption>11 <span>From the collection</span></figcaption>
-				</figure>
-				<figure class="collection-work">
-					<img src="images/gallery/bb6ddaf3-0104-4808-853d-335417aa41cf.jpg" alt="Artwork from the Lumsden Collection, work 12">
-					<figcaption>12 <span>From the collection</span></figcaption>
-				</figure>
-				<figure class="collection-work">
-					<img src="images/gallery/cd4b5908-3902-499b-91a0-bfe068650f20.jpg" alt="Artwork from the Lumsden Collection, work 13">
-					<figcaption>13 <span>From the collection</span></figcaption>
-				</figure>
-			</section>
-		</main>
-
-		<footer class="site-footer">
-			<span>The Lumsden Collection</span>
-			<span>Irish art, thoughtfully collected.</span>
-		</footer>
-	</body>
+  <dialog class="artwork-viewer" id="artworkViewer" aria-label="Artwork viewer">
+    <div class="viewer-top"><span class="viewer-brand">The Lumsden Collection</span><span class="viewer-counter" id="viewerCounter"></span><button class="viewer-close" id="viewerClose" aria-label="Close artwork viewer">×</button></div>
+    <button class="viewer-arrow viewer-previous" id="viewerPrevious" aria-label="Previous artwork">‹</button>
+    <div class="viewer-stage"><img id="viewerImage" src="" alt=""></div>
+    <button class="viewer-arrow viewer-next" id="viewerNext" aria-label="Next artwork">›</button>
+    <div class="viewer-bottom"><span id="viewerCaption">From the collection</span><button id="viewerZoom" class="viewer-zoom">Zoom in +</button></div>
+  </dialog>
+  <script src="gallery.js"></script>
+</body>
 </html>
